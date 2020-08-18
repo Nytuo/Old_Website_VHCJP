@@ -6,6 +6,8 @@
     <link rel="icon" href="Ressources/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="W3CustomCss.css">
+
     <title>Super Geoffrey Bros</title>
     <script type="text/javascript">  
         function googleTranslateElementInit() {  
@@ -38,10 +40,9 @@
            <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
         </div>
     </div>
-    <div class="paralaxSGB">
+    <div style="text-align: center;">
         <img src="Ressources/SGB1.png" class="paraIMGSGB" title="image de SGB">
-        <h1 class="paraTXTSGB">Super Geoffrey Bros</h1>
-    </div>   
+        <h1 class="paraTXTSGB">Super Geoffrey Bros</h1></div>
 </header>
 <style>
     .button {
@@ -85,28 +86,90 @@
     <p>plateformes : Windows (x86 et x64), macOS (x64), Linux (x86 et x64), HTML5, Android.<br/>Contrôleurs : Clavier, manettes, tactile (auto-détecter)<br/>Langue : Français
         <br/>Créé avec : Construct 2 r265-r267<br/>Auteur : Nytuo<br/>Genre : Plateformer<br/>Statut : Stable<br/>Version : 1.0.1.0</p>
         <h1>ScreenShots : </h1>
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="Ressources/SGB1.png" alt=""/></div>
-                <div class="slide"><img src="Ressources/SGB2.png" alt=""/></div>
-                <div class="slide"><img src="Ressources/SGB3.png" alt=""/></div>
+        <style>
+            .mySlides {
+                display: none
+            }
+    
+            .w3-left,
+            .w3-right,
+            .w3-badge {
+                cursor: pointer
+            }
+    
+            .w3-badge {
+                height: 13px;
+                width: 13px;
+                padding: 0
+            }
+        </style>
+        <div style="text-align: center;">
+            <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides" src="Ressources/SGB1.png" style="width:100%">
+                <img class="mySlides" src="Ressources/SGB2.png" style="width:100%">
+                <img class="mySlides" src="Ressources/SGB3.png" style="width:100%">
+    
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    
+    
+                </div>
             </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+    
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+    
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+    
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
         </div>
         <h1>Vidéos : </h1>
-        <div class="btn">
             <div class="video-container">
             <iframe width="854" height="478" src="https://www.youtube.com/embed/b8-8I-9k0WY?list=PLQiR1OKspG4sK4tD_fmeaknBDTnOC6GyV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div></div>
+        </div>
         <h1>Téléchargements : </h1>
         <div style="text-align: center;animation : fadeIn 0.5s;">
+            <div style="text-align: center">
+                <img src="Ressources/LogoLauncher.png" style="width: 15%;">
+                <div style="padding-top: 5px;"></div>
+        
+                <div class="box-3">
+                    <a href="nytuo_launcher.html">
+                        <div class="btn btn-three">
+                            <span>Télécharger avec le Launcher</span>
+                        </div>
+                    </a>
+                </div>  
+            </div>
+            <div style="padding-top: 5px;"></div>
                 <iframe frameborder="0" src="https://itch.io/embed/393216?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=ffffff&amp;border_color=363636" width="550" height="165"><a href="https://nytuo.itch.io/sgb">Super Geoffrey Bros by Nytuo</a></iframe><br/>
                 <iframe src="https://widgets.gamejolt.com/package/v1?key=cXezSFU9&theme=dark" frameborder="0" width="500" height="245"></iframe>
-                <div>
-                    <img src="Ressources/LogoLauncher.png">
-                    <div class="container" class="relative">
-                        <a href="nytuo_launcher.html" class="button">Voir le Nytuo Launcher</a>
-                    </div>
-                </div>
         </div>
     </body>
     <footer>

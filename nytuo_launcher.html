@@ -7,6 +7,7 @@
     <link rel="icon" href="Ressources/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="W3CustomCss.css">
     <title>Nytuo Launcher</title>
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -21,9 +22,7 @@
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
         </script>
 </head>
-<style>
 
-</style>
 <header>
     <div class="row">
 
@@ -42,37 +41,114 @@
             <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
         </div>
     </div>
-    <div class="paralaxNL"></div>
+    <div style="text-align: center;">
+        <img src="Ressources/LogoLauncher.png" alt="">
+    </div>
+
 </header>
+
+
+
 
 <body>
     <h1>Description :</h1>
     <p>Permet de télécharger, mettre à jour, installer et jouer à mes jeux.De manière simple et sans prise de tête.</p>
     <h1>Informations :</h1>
-    <p><br>Plateformes : Windows(x64), linux(x64)</p>
-    
-    <div class="slider">
-        <div class="slides">
-            <div class="slide"><img src="Ressources/NLSC.png" alt="" /></div>
-            <div class="slide"><img src="Ressources/NLSC2.png" alt="" /></div>
-            <div class="slide"><img src="Ressources/NLSC3.png" alt="" /></div>
-        </div>
-    </div>
-    </div>
+    <p>Plateformes : Windows(x64), linux(x64)</p><br />
+    <style>
+        .mySlides {
+            display: none
+        }
 
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+            cursor: pointer
+        }
+
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
+    </style>
     <div style="text-align: center;">
-        <div class="container">
-            <a href="https://github.com/Nytuo/Nytuo-Launcher/releases/latest/" class="button">Télécharger le Nytuo
-                Launcher (via GitHub)</a>
+        <div class="w3-content w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="Ressources/NLSC.png" style="width:100%">
+            <img class="mySlides" src="Ressources/NLSC2.png" style="width:100%">
+            <img class="mySlides" src="Ressources/NLSC3.png" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
         </div>
-        <div class="container">
-            <a href="nlcl.html" class="button">Voir les changes-logs</a>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
+            }
+        </script>
+    </div>
+    <div style="padding-top: 10px;"></div>
+    <div style="text-align: center;">
+        <div class="box-3">
+            <a href="https://github.com/Nytuo/Nytuo-Launcher/releases/latest/" href="javascript:void(0)">
+                <div class="btn btn-three">
+                    <span>Télécharger sur GITHUB</span>
+                </div>
+            </a>
         </div>
-        <div class="container">
-            <a href="aide.html" class="button">Voir l'aide</a>
+        <div style="padding-top: 5px;"></div>
+        <div class="box-3">
+            <a href="nlcl.html" href="javascript:void(0)">
+                <div class="btn btn-three">
+                    <span>Voir les Changes-Logs</span>
+                </div>
+            </a>
         </div>
-        <div class="container">
-            <a href="https://github.com/Nytuo/Nytuo-Launcher" class="button">Voir la page GitHub</a>
+        <div style="padding-top: 5px;"></div>
+
+        <div class="box-3">
+            <a href="aide.html" href="javascript:void(0)">
+                <div class="btn btn-three">
+                    <span>Voir l'aide</span>
+                </div>
+            </a>
+        </div>
+        <div style="padding-top: 5px;"></div>
+
+        <div class="box-3">
+            <a href="https://github.com/Nytuo/Nytuo-Launcher" href="javascript:void(0)">
+                <div class="btn btn-three">
+                    <span>Voir le code sur GITHUB</span>
+                </div>
+            </a>
         </div>
     </div>
 </body>
@@ -91,7 +167,7 @@
         </div>
         <div class="column">
             <h2>Outils et Donations :</h2>
-            <div id="google_translate_element"></div><br/><br/>
+            <div id="google_translate_element"></div><br /><br />
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick" />
                 <input type="hidden" name="hosted_button_id" value="W93ZM7YYC883E" />
@@ -101,24 +177,26 @@
                 <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
             </form>
         </div>
-        <div  class="column">
+        <div class="column">
             <h2>Liens Rapides :</h2>
-            <a style="color: whitesmoke;"href="aide.html">Aide</a><br />
-            <a style="color: whitesmoke;"href="https://github.com/Nytuo/Nytuo-Launcher">GitHub</a><br />
-            <a style="color: whitesmoke;"href="nytuo_launcher.html">Nytuo Launcher</a><br />
-            <a style="color: whitesmoke;"href="sn.html">Sans Nom Réédition</a><br />
+            <a style="color: whitesmoke;" href="aide.html">Aide</a><br />
+            <a style="color: whitesmoke;" href="https://github.com/Nytuo/Nytuo-Launcher">GitHub</a><br />
+            <a style="color: whitesmoke;" href="nytuo_launcher.html">Nytuo Launcher</a><br />
+            <a style="color: whitesmoke;" href="sn.html">Sans Nom Réédition</a><br />
             <a style="color: whitesmoke;" href="sgb.html">Super Geoffrey Bros</a><br />
-            <a style="color: whitesmoke;"href="nlcl.html">Changes-Logs du Nytuo Launcher</a><br />
-            
-            
+            <a style="color: whitesmoke;" href="nlcl.html">Changes-Logs du Nytuo Launcher</a><br />
+
+
         </div>
 
     </div>
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud).
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by
+        Nytuo (BEUX Arnaud).
         All Rights Reserved. &#169; 2020</p>
 </footer>
+
 
 </html>
