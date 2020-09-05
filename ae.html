@@ -12,16 +12,16 @@
     <title>Asteroid Escape</title>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr' },
+            new google.translate.TranslateElement({
+                    pageLanguage: 'fr'
+                },
                 'google_translate_element'
             );
-        }  
+        }
     </script>
 
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-        </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 <header>
     <div class="row">
@@ -41,22 +41,25 @@
             <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
         </div>
     </div>
-    <div style="text-align: center;">
-        <img src="Ressources/LogoAE.png" title="Logo du jeu" class="paraIMGAE">
+    <div class="paralaxAE">
+
+
+        <div style="text-align: center;">
+            <img src="Ressources/LogoAE.png" title="Logo du jeu" class="paraIMGAE">
+        </div>
         <h1 class="paraTXTAE">Asteroid Escape</h1>
+
     </div>
 </header>
 <style>
     .button {
-
         color: #212121;
-
     }
-
+    
     .button:hover {
         color: #212121;
     }
-
+    
     .button:after {
         content: '';
         position: absolute;
@@ -68,7 +71,7 @@
         border-radius: 10rem;
         z-index: -2;
     }
-
+    
     .button:before {
         content: '';
         position: absolute;
@@ -87,20 +90,20 @@
     <h1>Description :</h1><br />
     <p>Détruit tous les astéroids et survie en tirant dessus.Fais le meilleur scores possible.</p><br />
     <h1>Informations :</h1><br />
-    <p>plateforme : Windows (x64), Android<br />Contrôleur : Clavier<br />Langue : Français<br />Créé avec : Unity
-        2017.1<br />Auteur : Nytuo<br />Genre : Space Shooter<br />Statut : Stable<br />Version : 1.0.0.3<br /></p>
+    <p>plateforme : Windows (x64), Android<br />Contrôleur : Clavier<br />Langue : Français<br />Créé avec : Unity 2017.1
+        <br />Auteur : Nytuo<br />Genre : Space Shooter<br />Statut : Stable<br />Version : 1.0.0.3<br /></p>
     <h1>ScreenShots :</h1><br />
     <style>
         .mySlides {
             display: none
         }
-
+        
         .w3-left,
         .w3-right,
         .w3-badge {
             cursor: pointer
         }
-
+        
         .w3-badge {
             height: 13px;
             width: 13px;
@@ -115,8 +118,7 @@
 
 
 
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-                style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                 <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
@@ -143,8 +145,12 @@
                 var i;
                 var x = document.getElementsByClassName("mySlides");
                 var dots = document.getElementsByClassName("demo");
-                if (n > x.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = x.length }
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
@@ -161,22 +167,19 @@
         <div style="text-align: center">
             <img src="Ressources/LogoLauncher.png" style="width: 15%;">
             <div style="padding-top: 5px;"></div>
-    
+
             <div class="box-3">
                 <a href="nytuo_launcher.html">
                     <div class="btn btn-three">
                         <span>Télécharger avec le Launcher</span>
                     </div>
                 </a>
-            </div>  
+            </div>
         </div>
         <div style="padding-top: 5px;"></div>
-        <iframe frameborder="0"
-            src="https://itch.io/embed/274675?linkback=true&amp;border_width=0&amp;bg_color=1e1e1e&amp;fg_color=ffffff&amp;link_color=2b38ef&amp;border_color=595959"
-            width="550" height="165"><a href="https://nytuo.itch.io/asteroid-escape">AsteroidEscape by
+        <iframe frameborder="0" src="https://itch.io/embed/274675?linkback=true&amp;border_width=0&amp;bg_color=1e1e1e&amp;fg_color=ffffff&amp;link_color=2b38ef&amp;border_color=595959" width="550" height="165"><a href="https://nytuo.itch.io/asteroid-escape">AsteroidEscape by
                 Nytuo</a></iframe><br/>
-        <iframe src="https://widgets.gamejolt.com/package/v1?key=EHSMK86Z&theme=dark" frameborder="0" width="500"
-            height="245"></iframe>
+        <iframe src="https://widgets.gamejolt.com/package/v1?key=EHSMK86Z&theme=dark" frameborder="0" width="500" height="245"></iframe>
     </div>
 </body>
 <footer>
@@ -193,35 +196,26 @@
             <a style="color: whitesmoke;" href="https://nytuo.itch.io">Voir les jeux sur Itch.io</a>
         </div>
         <div class="column">
-            <h2>Outils et Donations :</h2>
+            <h2>Outils :</h2>
             <div id="google_translate_element"></div><br/><br/>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="W93ZM7YYC883E" />
-                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif" border="0"
-                    name="submit" title="PayPal - The safer, easier way to pay online!"
-                    alt="Bouton Faites un don avec PayPal" />
-                <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
-            </form>
         </div>
-        <div  class="column">
+        <div class="column">
             <h2>Liens Rapides :</h2>
-            <a style="color: whitesmoke;"href="aide.html">Aide</a><br />
-            <a style="color: whitesmoke;"href="https://github.com/Nytuo/Nytuo-Launcher">GitHub</a><br />
-            <a style="color: whitesmoke;"href="nytuo_launcher.html">Nytuo Launcher</a><br />
-            <a style="color: whitesmoke;"href="sn.html">Sans Nom Réédition</a><br />
+            <a style="color: whitesmoke;" href="aide.html">Aide</a><br />
+            <a style="color: whitesmoke;" href="https://github.com/Nytuo/Nytuo-Launcher">GitHub</a><br />
+            <a style="color: whitesmoke;" href="nytuo_launcher.html">Nytuo Launcher</a><br />
+            <a style="color: whitesmoke;" href="sn.html">Sans Nom Réédition</a><br />
             <a style="color: whitesmoke;" href="sgb.html">Super Geoffrey Bros</a><br />
-            <a style="color: whitesmoke;"href="nlcl.html">Changes-Logs du Nytuo Launcher</a><br />
-            
-            
+            <a style="color: whitesmoke;" href="nlcl.html">Changes-Logs du Nytuo Launcher</a><br />
+
+
         </div>
 
     </div>
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud).
-        All Rights Reserved. &#169; 2020</p>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud). All Rights Reserved. &#169; 2020</p>
 </footer>
 
 </html>

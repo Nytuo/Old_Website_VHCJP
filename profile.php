@@ -20,6 +20,16 @@ require 'header.php';
 
             <div class="cards-list">
                 <?php
+                if ($_SESSION['SFO'] == 1){
+                    echo ' <a href="sfo.html">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="Ressources/IMGSFO.png" /> </div>
+                        <div class="card_title title-white">
+                            <img src="Ressources/LogoSFO2.png" style="z-index: 1; width: 65%;top: 35%;left: 40%">
+                        </div>
+                    </div>
+                </a>';
+                }
                 if ($_SESSION['LAATIM'] == 1) {
                     echo '<a href="laatim.html">
                 <div class="card 1">

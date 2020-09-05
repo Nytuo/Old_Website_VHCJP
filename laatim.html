@@ -12,16 +12,16 @@
     <title>Legend Adventure And The Infernal Maze</title>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr' },
+            new google.translate.TranslateElement({
+                    pageLanguage: 'fr'
+                },
                 'google_translate_element'
             );
-        }  
+        }
     </script>
 
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-        </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 <header>
     <div class="row">
@@ -41,9 +41,15 @@
             <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
         </div>
     </div>
-    <div style="text-align: center;">
-        <img src="Ressources/LogoLAATIM.png" class="paraIMGLAATIM" title="Image de LAATIM">
+    <div class="paralaxLAATIM">
+
+
+        <div style="text-align: center;">
+            <img src="Ressources/LogoLAATIM.png" class="paraIMGLAATIM" title="Image de LAATIM">
+        </div>
         <h1 class="paraTXTLAATIM">Legend Adventure and the Infernal Maze</h1>
+
+        <div style="padding-top: 15%;"></div>
     </div>
 </header>
 
@@ -59,7 +65,7 @@
         border-radius: 10rem;
         z-index: -2;
     }
-
+    
     .button:before {
         content: '';
         position: absolute;
@@ -76,27 +82,24 @@
 
 <body>
     <h1>Description :</h1><br />
-    <p>Vous arriver pour des vacances dans un labyrinthe mais une présence hostile nuira à votre séjour…<br />
-        Un jeune guerrier ayant terminer sa formation décida de prendre des vacances sur une petite ile tranquille.Mais
-        dans la foret ressemblant à un labyrinthe se trouve une présence hostile….Explorer le labyrinthe en évitant ou
-        tuant des monstres;Collecter l’or et l’XP des coffres.Différentes difficultés avec gestion de la soif et de la
-        nourriture.Sauver l’ile d’une invasion démoniaque<br /></p>
+    <p>Vous arriver pour des vacances dans un labyrinthe mais une présence hostile nuira à votre séjour…<br /> Un jeune guerrier ayant terminer sa formation décida de prendre des vacances sur une petite ile tranquille.Mais dans la foret ressemblant à un
+        labyrinthe se trouve une présence hostile….Explorer le labyrinthe en évitant ou tuant des monstres;Collecter l’or et l’XP des coffres.Différentes difficultés avec gestion de la soif et de la nourriture.Sauver l’ile d’une invasion démoniaque<br
+        /></p>
     <h1>Informations :</h1><br />
-    <p>Plateforme : Windows (x64)<br />Contrôleurs : Clavier/souris (Manettes en cours)<br />Langue : Français<br />Créé
-        avec : Unreal Engine 4.22.3<br />Auteur : Nytuo<br />Genre : Aventure et action<br />Statut : Stable (bugs
-        possible)<br />Version : 1.0.4<br /></p>
+    <p>Plateforme : Windows (x64)<br />Contrôleurs : Clavier/souris (Manettes en cours)<br />Langue : Français<br />Créé avec : Unreal Engine 4.22.3<br />Auteur : Nytuo<br />Genre : Aventure et action<br />Statut : Stable (bugs possible)
+        <br />Version : 1.0.4<br /></p>
     <h1>ScreenShots :</h1><br />
     <style>
         .mySlides {
             display: none
         }
-
+        
         .w3-left,
         .w3-right,
         .w3-badge {
             cursor: pointer
         }
-
+        
         .w3-badge {
             height: 13px;
             width: 13px;
@@ -118,8 +121,7 @@
 
 
 
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-                style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                 <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
@@ -153,8 +155,12 @@
                 var i;
                 var x = document.getElementsByClassName("mySlides");
                 var dots = document.getElementsByClassName("demo");
-                if (n > x.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = x.length }
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
@@ -168,30 +174,26 @@
     </div>
     <h1>Vidéos : </h1>
     <div class="video-container">
-        <iframe width="854" height="478" src="https://www.youtube.com/embed/9JP4bXCtbrc" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="854" height="478" src="https://www.youtube.com/embed/9JP4bXCtbrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <h1>Téléchargements : </h1>
     <div style="text-align: center;animation : fadeIn 0.5s;">
         <div style="text-align: center">
             <img src="Ressources/LogoLauncher.png" style="width: 15%;">
             <div style="padding-top: 5px;"></div>
-    
+
             <div class="box-3">
                 <a href="nytuo_launcher.html">
                     <div class="btn btn-three">
                         <span>Télécharger avec le Launcher</span>
                     </div>
                 </a>
-            </div>  
+            </div>
         </div>
         <div style="padding-top: 5px;"></div>
-        <iframe frameborder="0"
-            src="https://itch.io/embed/464784?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=DE4728&amp;border_color=363636"
-            width="550" height="165"><a href="https://nytuo.itch.io/la-im">Legend Adventure : And The Infernal Maze by
+        <iframe frameborder="0" src="https://itch.io/embed/464784?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=DE4728&amp;border_color=363636" width="550" height="165"><a href="https://nytuo.itch.io/la-im">Legend Adventure : And The Infernal Maze by
                 Nytuo</a></iframe><br />
-        <iframe src="https://widgets.gamejolt.com/package/v1?key=3PXfh2SK&theme=dark" frameborder="0" width="500"
-            height="245"></iframe><br /><br />
+        <iframe src="https://widgets.gamejolt.com/package/v1?key=3PXfh2SK&theme=dark" frameborder="0" width="500" height="245"></iframe><br /><br />
     </div>
 
 
@@ -211,16 +213,8 @@
             <a style="color: whitesmoke;" href="https://nytuo.itch.io">Voir les jeux sur Itch.io</a>
         </div>
         <div class="column">
-            <h2>Outils et Donations :</h2>
-            <div id="google_translate_element"></div><br /><br />
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="W93ZM7YYC883E" />
-                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif" border="0"
-                    name="submit" title="PayPal - The safer, easier way to pay online!"
-                    alt="Bouton Faites un don avec PayPal" />
-                <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
-            </form>
+            <h2>Outils :</h2>
+            <div id="google_translate_element"></div><br/><br/>
         </div>
         <div class="column">
             <h2>Liens Rapides :</h2>
@@ -238,9 +232,7 @@
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by
-        Nytuo (BEUX Arnaud).
-        All Rights Reserved. &#169; 2020</p>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud). All Rights Reserved. &#169; 2020</p>
 </footer>
 
 </html>

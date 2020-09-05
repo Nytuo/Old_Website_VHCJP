@@ -9,16 +9,15 @@
     <title>Games</title>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr' },
+            new google.translate.TranslateElement({
+                    pageLanguage: 'fr'
+                },
                 'google_translate_element'
             );
-        }  
+        }
     </script>
-
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-        </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </head>
 <header>
     <div class="row">
@@ -45,6 +44,14 @@
         <h1>Mes jeux :</h1>
 
         <div class="cards-list">
+            <a href="sfo.html">
+                <div class="card 1">
+                    <div class="card_image"> <img src="Ressources/IMGSFO.png" /> </div>
+                    <div class="card_title title-white">
+                        <img src="Ressources/LogoSFO2.png" style="z-index: 1; width: 65%;top: 35%;left: 40%">
+                    </div>
+                </div>
+            </a>
             <a href="laatim.html">
                 <div class="card 1">
                     <div class="card_image"> <img src="Ressources/IMGLAATIM.png" /> </div>
@@ -95,18 +102,19 @@
             </a>
             <a href="fwd.html">
                 <div class="card 1">
-                    <div class="card_image"> <img src="Ressources/IMGFWD.png" /> </div>
-                    <div class="card_title title-white">
-                        <img src="Ressources/LogoFWD.png" style="z-index: 1; width: 38%;top: 30%;left: 35%">
-                    </div>
+                    <div class="card_image"> <img src="Ressources/JFWD.png" /> </div>
+                    <!--<div class="card_title title-white">
+                    <img src="Ressources/LogoFWD.png" style="z-index: 1; width: 38%;top: 30%;left: 35%">
+                  </div>-->
                 </div>
             </a>
             <a href="tb.html">
                 <div class="card 1">
-                    <div class="card_image"> <img src="Ressources/IMGTB.png" /> </div>
-                    <div class="card_title title-white">
-                        <img src="Ressources/LogoTB.png" style="z-index: 1; width: 40%;top: 25%;left: 35%">
-                    </div>
+                    <div class="card_image"> <img src="Ressources/JTB.png"></div>
+
+                    <!--<div class="card_title title-white">
+                    <img src="Ressources/LogoTB.png" style="z-index: 1; width: 40%;top: 25%;left: 35%">
+                  </div>-->
                 </div>
             </a>
             <a href="wr.html">
@@ -150,16 +158,8 @@
             <a style="color: whitesmoke;" href="https://nytuo.itch.io">Voir les jeux sur Itch.io</a>
         </div>
         <div class="column">
-            <h2>Outils et Donations :</h2>
-            <div id="google_translate_element"></div><br /><br />
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="W93ZM7YYC883E" />
-                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif" border="0"
-                    name="submit" title="PayPal - The safer, easier way to pay online!"
-                    alt="Bouton Faites un don avec PayPal" />
-                <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
-            </form>
+            <h2>Outils :</h2>
+            <div id="google_translate_element"></div><br/><br/>
         </div>
         <div class="column">
             <h2>Liens Rapides :</h2>
@@ -177,9 +177,7 @@
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by
-        Nytuo (BEUX Arnaud).
-        All Rights Reserved. &#169; 2020</p>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud). All Rights Reserved. &#169; 2020</p>
 </footer>
 
 </html>
