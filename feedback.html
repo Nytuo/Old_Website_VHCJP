@@ -19,26 +19,46 @@
     <script type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
         </script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 </head>
 
 <header>
-    <div class="row">
-
-        <div class="navcolumn">
-            <ul class="topnav">
-                <li><a href="about.html">A Propos</a></li>
-                <li><a class="active" href="feedback.html">FeedBack</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="softwares.html">Logiciels</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a href="games.html">Jeux</a></li>
-                <li><a href="home.html">Accueil</a></li>
-            </ul>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center"><img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+         
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a  href="games.html">Jeux</a></li>
+                    <li><a href="softwares.html">Logiciels</a></li>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li class="active"><a href="feedback.html">FeedBack</a></li>
+                    <li><a href="about.html">A Propos</a></li>
+                    
+                    
+                    
+          </ul>
         </div>
-        <div class="navlogocolumn">
-            <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
-        </div>
-    </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Accueil</a></li>
+        <li><a  href="games.html">Jeux</a></li>
+        <li><a href="softwares.html">Logiciels</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li class="active"><a href="feedback.html">FeedBack</a></li>
+        <li><a href="about.html">A Propos</a></li>
+      </ul>
+      <script> 
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+      </script>
 </header>
 
 <body>
@@ -52,11 +72,6 @@
             allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 
-    </div>
-    <div style="text-align: center;">
-        <iframe src="https://canary.discordapp.com/widget?id=689118193171562641&theme=dark" width="1280px" height="720px"
-            allowtransparency="true" frameborder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="border: none; max-width:100%; max-height:100vh"> </iframe>
     </div>
 </body>
 <footer>
@@ -92,9 +107,8 @@
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by
-        Nytuo (BEUX Arnaud).
-        All Rights Reserved. &#169; 2020</p>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP and JS. Create by Nytuo (BEUX Arnaud) using some <a href="https://materializecss.com">Materialize-Css</a> components. All Rights Reserved. &#169; 2020</p>
+
 </footer>
 
 </html>

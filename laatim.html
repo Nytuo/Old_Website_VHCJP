@@ -22,34 +22,47 @@
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 </head>
 <header>
-    <div class="row">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="Ressources/logo.png" class="logonav"
+                    title="Logo de Nytuo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
 
-        <div class="navcolumn">
-            <ul class="topnav">
-                <li><a href="about.html">A Propos</a></li>
-                <li><a href="feedback.html">FeedBack</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="softwares.html">Logiciels</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a class="active" href="games.html">Jeux</a></li>
                 <li><a href="home.html">Accueil</a></li>
+                <li class="active"><a href="games.html">Jeux</a></li>
+                <li><a href="softwares.html">Logiciels</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="feedback.html">FeedBack</a></li>
+                <li><a href="about.html">A Propos</a></li>
+
+
+
             </ul>
         </div>
-        <div class="navlogocolumn">
-            <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
-        </div>
-    </div>
-    <div class="paralaxLAATIM">
-
-
-        <div style="text-align: center;">
-            <img src="Ressources/LogoLAATIM.png" class="paraIMGLAATIM" title="Image de LAATIM">
-        </div>
-        <h1 class="paraTXTLAATIM">Legend Adventure and the Infernal Maze</h1>
-
-        <div style="padding-top: 15%;"></div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Accueil</a></li>
+        <li class="active"><a href="games.html">Jeux</a></li>
+        <li ><a href="softwares.html">Logiciels</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="about.html">A Propos</a></li>
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <div style="text-align: center;padding-top: 100px;">
+        <img src="Ressources/LogoLAATIM.png" alt="">
     </div>
 </header>
 
@@ -173,27 +186,38 @@
         </script>
     </div>
     <h1>Vidéos : </h1>
-    <div class="video-container">
-        <iframe width="854" height="478" src="https://www.youtube.com/embed/9JP4bXCtbrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="text-align:center">
+        <iframe width="850" height="500" src="https://www.youtube.com/embed/9JP4bXCtbrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <h1>Téléchargements : </h1>
-    <div style="text-align: center;animation : fadeIn 0.5s;">
-        <div style="text-align: center">
-            <img src="Ressources/LogoLauncher.png" style="width: 15%;">
-            <div style="padding-top: 5px;"></div>
+    <div style="text-align: center;">
+        <div class="row">
 
-            <div class="box-3">
-                <a href="nytuo_launcher.html">
-                    <div class="btn btn-three">
-                        <span>Télécharger avec le Launcher</span>
-                    </div>
-                </a>
+            <div class="column">
+                <a href="https://nytuo.itch.io/laatim"><img src="Ressources/itchio_badge.png" style="width:80%"></a>
+            </div>
+            <div class="column">
+                <div style="margin-right:5px">
+                    <a href="nytuo_launcher.html">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Ressources/LogoLauncher.png">
+
+                            </div>
+                            <div class="card-content">
+                                <p>Un simple launcher pour mes jeux</p>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="https://gamejolt.com/games/LAim/434865"><img src="Ressources/Game-jolt-logo.svg.png"
+                        style="width:80%"></a>
             </div>
         </div>
-        <div style="padding-top: 5px;"></div>
-        <iframe frameborder="0" src="https://itch.io/embed/464784?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=DE4728&amp;border_color=363636" width="550" height="165"><a href="https://nytuo.itch.io/la-im">Legend Adventure : And The Infernal Maze by
-                Nytuo</a></iframe><br />
-        <iframe src="https://widgets.gamejolt.com/package/v1?key=3PXfh2SK&theme=dark" frameborder="0" width="500" height="245"></iframe><br /><br />
     </div>
 
 
@@ -232,7 +256,8 @@
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud). All Rights Reserved. &#169; 2020</p>
-</footer>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP and JS. Create by
+        Nytuo (BEUX Arnaud) using some <a href="https://materializecss.com">Materialize-Css</a> components. All Rights
+        Reserved. &#169; 2020</p></footer>
 
 </html>

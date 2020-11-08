@@ -4,11 +4,16 @@ require 'header.php';
 <main>
     <h1>Changeur de Nom d'utilisateur</h1>
     <p>Ici vous pouvez changer votre nom d'utilisateur, un redémarrage du Nytuo Launcher, des jeux ainsi que une reconnexion au compte du site est nécessaire.</p>
-
-    <form style="text-align: center" action="changeUsername-logic.php" method="post">
-        <input type="text" name="username" placeholder="Indiquer votre nouveau nom d'utilisateur"></br>
-        <button type="submit" name="changeusername-submit">Changer de nom d'utilisateur</button>
-    </form>
+<div class="row">
+    <form class="col s12" style="text-align: center" action="changeUsername-logic.php" method="post">
+         <div class="row">
+                            <div class="input-field col s12">
+        <input type="text" name="username" id="newuid">
+        <label for="newuid">Nouveau nom d'utilisateur</label>
+                            </div>
+                        </div>
+        <div style="text-align:center"><button class="waves-effect wave-light btn" style="background-color:dodgerblue" type="submit" name="changeusername-submit">Changer de nom d'utilisateur</button></div>
+    </form></div>
     <?php
     if (isset($_GET['change'])) {
         if ($_GET['change'] == 'success') {

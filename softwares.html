@@ -7,6 +7,11 @@
     <link rel="icon" href="Ressources/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <title>Logiciels</title>
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -22,37 +27,57 @@
     </script>
 </head>
 <header>
-    <div class="row">
-
-        <div class="navcolumn">
-            <ul class="topnav">
-                <li><a href="about.html">A Propos</a></li>
-                <li><a href="feedback.html">FeedBack</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a class="active" href="softwares.html">Logiciels</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a href="games.html">Jeux</a></li>
-                <li><a href="home.html">Accueil</a></li>
-            </ul>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center"><img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+         
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a  href="games.html">Jeux</a></li>
+                    <li class="active"><a href="softwares.html">Logiciels</a></li>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="feedback.html">FeedBack</a></li>
+                    <li><a href="about.html">A Propos</a></li>
+                    
+                    
+                    
+          </ul>
         </div>
-        <div class="navlogocolumn">
-            <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
-        </div>
-    </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Accueil</a></li>
+        <li><a  href="games.html">Jeux</a></li>
+        <li class="active"><a href="softwares.html">Logiciels</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="about.html">A Propos</a></li>
+      </ul>
+      <script> 
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+      </script>
 </header>
 
 <body>
     <div class="spaceX2">
         <h1>Mes Logiciels :</h1>
         <div class="cards-list">
-            <a href="nytuo_launcher.html">
-                <div class="card 1">
-                    <div class="card_image"> <img src="Ressources/JNL.png" /> </div>
-                    <!--<div class="card_title title-white">
-                  <img src="Ressources/LogoLauncher.png" style="z-index: 1; width: 50%;top: 35%;left: 40%">
-                </div>-->
-                </div>
-            </a>
+            <div class="homeresize">
+                <a href="nytuo_launcher.html"><div class="card">
+                    <div class="card-image">
+                        <img src="Ressources/LogoLauncher.png">
+                       
+                    </div>
+                    <div class="card-content">
+                        <p>Un simple launcher pour mes jeux</p>
+                    </div>
+                    
+                       
+                </div> 
+            </div></a>
         </div>
 </body>
 <footer>
@@ -87,7 +112,7 @@
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud). All Rights Reserved. &#169; 2020</p>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP and JS. Create by Nytuo (BEUX Arnaud) using some <a href="https://materializecss.com">Materialize-Css</a> components. All Rights Reserved. &#169; 2020</p>
 </footer>
 
 </html>

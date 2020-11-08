@@ -22,34 +22,47 @@
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 </head>
 <header>
-    <div class="row">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="Ressources/logo.png" class="logonav"
+                    title="Logo de Nytuo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
 
-        <div class="navcolumn">
-            <ul class="topnav">
-                <li><a href="about.html">A Propos</a></li>
-                <li><a href="feedback.html">FeedBack</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="softwares.html">Logiciels</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a class="active" href="games.html">Jeux</a></li>
                 <li><a href="home.html">Accueil</a></li>
+                <li class="active"><a href="games.html">Jeux</a></li>
+                <li><a href="softwares.html">Logiciels</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="feedback.html">FeedBack</a></li>
+                <li><a href="about.html">A Propos</a></li>
+
+
+
             </ul>
         </div>
-        <div class="navlogocolumn">
-            <img src="Ressources/logo.png" class="logonav" title="Logo de Nytuo">
-        </div>
-    </div>
-    <div class="paralaxSGB">
-
-
-        <div style="text-align: center;">
-            <img src="Ressources/SGB1.png" class="paraIMGSGB" title="image de SGB">
-        </div>
-        <h1 class="paraTXTSGB">Super Geoffrey Bros</h1>
-
-        <div style="padding-top: 10%;"></div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Accueil</a></li>
+        <li class="active"><a href="games.html">Jeux</a></li>
+        <li><a href="softwares.html">Logiciels</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="about.html">A Propos</a></li>
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <div style="text-align:center; padding-top: 100px;">
+        <img style="width:20%" src="Ressources/SGB1.png">
     </div>
 </header>
 <style>
@@ -163,26 +176,38 @@
         </script>
     </div>
     <h1>Vidéos : </h1>
-    <div class="video-container">
-        <iframe width="854" height="478" src="https://www.youtube.com/embed/b8-8I-9k0WY?list=PLQiR1OKspG4sK4tD_fmeaknBDTnOC6GyV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="text-align: center">
+        <iframe width="850" height="500" src="https://www.youtube.com/embed/b8-8I-9k0WY?list=PLQiR1OKspG4sK4tD_fmeaknBDTnOC6GyV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <h1>Téléchargements : </h1>
-    <div style="text-align: center;animation : fadeIn 0.5s;">
-        <div style="text-align: center">
-            <img src="Ressources/LogoLauncher.png" style="width: 15%;">
-            <div style="padding-top: 5px;"></div>
+    <div style="text-align: center;">
+        <div class="row">
 
-            <div class="box-3">
-                <a href="nytuo_launcher.html">
-                    <div class="btn btn-three">
-                        <span>Télécharger avec le Launcher</span>
-                    </div>
-                </a>
+            <div class="column">
+                <a href="https://nytuo.itch.io/sgb"><img src="Ressources/itchio_badge.png" style="width:80%"></a>
+            </div>
+            <div class="column">
+                <div style="margin-right:5px">
+                    <a href="nytuo_launcher.html">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Ressources/LogoLauncher.png">
+
+                            </div>
+                            <div class="card-content">
+                                <p>Un simple launcher pour mes jeux</p>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <a href="https://gamejolt.com/games/sgb/407398"><img src="Ressources/Game-jolt-logo.svg.png"
+                        style="width:80%"></a>
             </div>
         </div>
-        <div style="padding-top: 5px;"></div>
-        <iframe frameborder="0" src="https://itch.io/embed/393216?linkback=true&amp;border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=ffffff&amp;border_color=363636" width="550" height="165"><a href="https://nytuo.itch.io/sgb">Super Geoffrey Bros by Nytuo</a></iframe><br/>
-        <iframe src="https://widgets.gamejolt.com/package/v1?key=cXezSFU9&theme=dark" frameborder="0" width="500" height="245"></iframe>
     </div>
 </body>
 <footer>
@@ -218,7 +243,7 @@
 
 
 
-    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP. Entirely Create by Nytuo (BEUX Arnaud). All Rights Reserved. &#169; 2020</p>
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP and JS. Create by Nytuo (BEUX Arnaud) using some <a href="https://materializecss.com">Materialize-Css</a> components. All Rights Reserved. &#169; 2020</p>
 </footer>
 
 </html>

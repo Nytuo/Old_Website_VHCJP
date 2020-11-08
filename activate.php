@@ -5,11 +5,15 @@ require 'header.php';
     <h1>Activer un jeu: </h1>
     <p>Entrer le clé que vous avez reçu par mail.</p>
     <p>Après l'activation, si le jeu n'apparait dans votre profile ou dans le Nytuo Launcher, pensez a vous reconnecter pour mettre à jour vos informations.</p>
-
-    <form style="text-align: center" action="activate-logic.php" method="post">
-        <input type="text" name="key" placeholder="Insérer la clé d'activation"></br>
-        <button type="submit" name="activate-submit">Activer!</button>
+<div class="row">
+    <form class="col s12" style="text-align: center" action="activate-logic.php" method="post"><div class="row">
+                            <div class="input-field col s12">
+        <input type="text" class="validate" id="key" name="key"><label for="key">Clé</label>
+                            </div>
+                        </div>
+        <div style="text-align:center"><button class="waves-effect wave-light btn"style="background-color:dodgerblue" type="submit" name="activate-submit">Activer!</button></div>
     </form>
+    </div>
     <?php
     if (isset($_GET['error'])) {
         if ($_GET['error'] == 'keyfieldsempty') {
