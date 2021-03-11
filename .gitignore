@@ -1,8 +1,2 @@
-activate-logic.php
-changeUsername-logic.php
-create-new-password.php
-dbh.php
-signup-v.php
-reset-request.php
-reset-password-logic.php
-login-v.php
+nytukttd_UserAccounts.sql
+*.php

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Ressources/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="icon" href="Ressources/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap">
+    <title>News -- Nytuo Launcher</title>
+
+</head>
+
+<header>
+    <script>
+        const app = require('electron').remote.app;
+
+
+        function backgo() {
+            window.history.back()
+        }
+    </script>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="Ressources/LogoLauncher.png" class="logonav" title="Logo de Nytuo"></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a onclick="backgo()">← Go Back</a></li>
+            </ul>
+        </div>
+    </nav><br /><br />
+</header>
+
+<body>
+    <div style="padding-top: 120px;">
+    </div>
+    <h1>News :</h1>
+    <h2>Last version : 2021.02.06</h2>
+
+    <div class="cards-list" style="text-align: center">
+        <div class="row" style="text-align: center">
+            <div class="col s12 m2" style="text-align: center">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="Ressources/NytuoLauncher.png">
+                        <span class="card-title">Launcher (2021.01.13)</span>
+                    </div>
+                    <div class="card-content">
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col s12 m2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="Ressources/IMGSFO.png">
+                    <span class="card-title">The last game</span>
+                </div>
+                <div class="card-content">
+                    <p>ShootFighter Origins <br/> Kill zombies by waves</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>ChangesLog of the month, <a style="font-family: 'Oswald', sans-serif;color: dodgerblue;font-size: 34px;" href="https://nytuo.yo.fr/nytuo_launcher.html">All changeslogs here</a>): </h1>
+    <ul class="collapsible expandable">
+        <li>
+            <div class="collapsible-header">2021.02.06</div>
+            <div class="collapsible-body"><span>                <p>
+                <span class="fixed">fixed</span>Bug for new users because the launcher doesn't create a folder containing the user informations.</p>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">2021.01.15</div>
+            <div class="collapsible-body"><span>                <p>
+                <span class="enhanced">enhanced</span>License changed from ISC to GNU General Public License V3 (GNU GPLv3)</p>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">2021.01.13</div>
+            <div class="collapsible-body"><span>
+                    <p><span class="new">New</span>Progress bar in taskbar</p>
+                <p><span class="fixed">fixed</span>Correction of bugs</p>
+                <p><span class="new">new</span>Profile Picture (Global)</p>
+                <p><span class="new">new</span>Cryptage of the password and some others things like available games and conection attestation</p>
+                <p><span class="enhanced">enhanced</span>Account gestion are no more on the Launcher domain and have changed to the website pages</p>
+                <p><span class="enhanced">enhanced</span>Offline mode enhanced</p>
+                <p><span class="enhanced">enhanced</span>Redisgn of the launcher</p>
+                <p><span class="enhanced">enhanced</span>Connection system has changed and the games page has been replaced by an local page.</p>
+                <p><span class="enhanced">enhanced</span>Game Launch design</p>
+                <p><span class="enhanced">enhanced</span>Update system</p>
+                </span>
+            </div>
+        </li>
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+    </script>
+</body>
+
+</html>

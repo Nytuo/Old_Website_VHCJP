@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^beta\.nytuo\.yo\.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.beta\.nytuo\.yo\.fr$
+RewriteRule ^/?$ "https\:\/\/beta\.nytuo\.yo\.fr\/NoBeta\.html" [R=301,L]
