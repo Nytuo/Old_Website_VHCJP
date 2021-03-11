@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Ressources/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <title>Accueil</title>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr'
+            },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+</head>
+
+
+
+<header>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="Ressources/logo.png" class="logonav"
+                    title="Logo de Nytuo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+                <li class="active"><a href="home.html">Accueil</a></li>
+                <li><a href="games.html">Jeux</a></li>
+                <li><a href="softwares.html">Logiciels</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="feedback.html">FeedBack</a></li>
+                <li><a href="about.html">A Propos</a></li>
+
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="home.html">Accueil</a></li>
+        <li><a href="games.html">Jeux</a></li>
+        <li><a href="softwares.html">Logiciels</a></li>
+        <li><a href="profile.php">Profile</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="about.html">A Propos</a></li>
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <div style="padding-top: 50px;">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <a href="sfo.html">
+                        <img src="Ressources/IMGSFO2.png">
+                    </a>
+                    <div class="caption right-align">
+                        <h3>Dernier jeu : ShootFighter Origins</h3>
+                        <h5 class="light grey-text text-lighten-3">Tuer des zombies par vagues en 2D</h5>
+                    </div>
+                </li>
+                <li><a href="sn.html">
+                        <img src="Ressources/IMGSN.png"></a>
+                    <div class="caption center-align">
+                        <h3>SansNom Réédition</h3>
+                        <h5 class="light grey-text text-lighten-3">Mon premier jeu, enfin achevé.</h5>
+                    </div>
+                </li>
+                <li><a href="sgb.html">
+                        <img src="Ressources/SGB2.png"></a>
+                    <div class="caption right-align">
+                        <h3>Super Geoffrey Bros</h3>
+                        <h5 class="light grey-text text-lighten-3">Une semaine, Un objectif, Un jeu</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+    </script>
+</header>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Mes jeux :</h1>
+
+        <div class="cards-list">
+
+
+
+
+            <div class="homeresize">
+                <a href="sfo.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGSFO2.png">
+                            <span class="card-title">ShootFighter Origins</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Survie a des vagues de Zombies en 2D</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="laatim.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGLAATIM.png">
+                            <span class="card-title">Legend Adventure and the Infernal Maze</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Tu viens pour des vacances mais quelque chose va nuir a ton séjour</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+
+            <div class="homeresize">
+                <a href="sgb.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/SGB2.png">
+                            <span class="card-title">Super Geoffrey Bros</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Un jeu a la Mario pour le mariage de mon cousin Geoffrey</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+
+            <div class="homeresize">
+                <a href="sf.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGSF.png">
+                            <span class="card-title">ShootFighter</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Survie a des vagues de Zombies en 3D</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="la.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGLA.png">
+                            <span class="card-title">Lutin Adventure</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Retrouve toutes les pièces et monte en haut de la tour</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="vitf.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGVITF.png">
+                            <span class="card-title">Vincent In The Forest</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Retrouve touts les composants pour quitter la foret</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="ttd.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGTTD.png">
+                            <span class="card-title">The TARDIS Defender</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Protège le TARDIS des Cybermans et des Daleks</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="fwd.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGFWD.png">
+                            <span class="card-title">Firewall Defender</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Evite la destruction du processeur en plaçant des tourelles pour detruire les virus</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="tb.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGTB.png">
+                            <span class="card-title">TanksBattle</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Jeu de tanks a travers le LAN</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="wr.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGWR.png">
+                            <span class="card-title">WinRun</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Jeu de course basic</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="ae.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGAE.png">
+                            <span class="card-title">AsteroidEscape</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Détruit tout les astéroids et essaye de marquer le plus de point</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+            <div class="homeresize">
+                <a href="sn.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/IMGSN.png">
+                            <span class="card-title">Sans Nom Réédition</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Un jeu juste pour le FUN.</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+        </div>
+        <div style="margin-top: 50px;"></div>
+        <h1>Mes Logiciels :</h1>
+        <div class="cards-list">
+            <div class="homeresize">
+                <a href="nytuo_launcher.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Ressources/LogoLauncher.png">
+
+                        </div>
+                        <div class="card-content">
+                            <p>Un simple launcher pour mes jeux</p>
+                        </div>
+
+
+                    </div>
+            </div></a>
+        </div>
+</body>
+<footer>
+
+    <div class="spaceX"></div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Liens utiles :</h2>
+            <a style="color: whitesmoke;" href="https://gamejolt.com/@Nytuo">Voir les jeux sur Gamejolt</a><br /><br />
+
+            <a style="color: whitesmoke;" href="home.html">Aller à l'accueil</a><br /><br />
+
+            <a style="color: whitesmoke;" href="https://nytuo.itch.io">Voir les jeux sur Itch.io</a>
+        </div>
+        <div class="column">
+            <h2>Outils :</h2>
+            <div id="google_translate_element"></div><br /><br />
+        </div>
+        <div class="column">
+            <h2>Liens Rapides :</h2>
+            <a style="color: whitesmoke;" href="aide.html">Aide</a><br />
+            <a style="color: whitesmoke;" href="https://github.com/Nytuo/Nytuo-Launcher">GitHub</a><br />
+            <a style="color: whitesmoke;" href="nytuo_launcher.html">Nytuo Launcher</a><br />
+            <a style="color: whitesmoke;" href="sn.html">Sans Nom Réédition</a><br />
+            <a style="color: whitesmoke;" href="sgb.html">Super Geoffrey Bros</a><br />
+            <a style="color: whitesmoke;" href="nlcl.html">Changes-Logs du Nytuo Launcher</a><br />
+            <a style="color: whitesmoke;" href="privacy.html">Privacy</a><br />
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <p class="txtfoot">Website of Nytuo, Host by PlanetHoster WorldLite. Made with HTML5, CSS3, PHP and JS. Create by
+        Nytuo (BEUX Arnaud) using some <a href="https://materializecss.com">Materialize-Css</a> components. All Rights
+        Reserved. &#169; 2020</p>
+</footer>
+
+</html>
